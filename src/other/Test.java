@@ -1,6 +1,6 @@
-import java.util.Comparator;
+package other;
 
-public class Test implements Comparable<Test> {
+public class Test {
     String name;
     int price;
 
@@ -12,14 +12,6 @@ public class Test implements Comparable<Test> {
         this.price = price;
     }
 
-    @Override
-    public int compareTo(Test o) {
-        // write logic to compare name properties
-        // return
-        return this.name.compareTo(o.getName());
-        //return this.price-o.getPrice();
-
-    }
 
     public String getName() {
         return name;
