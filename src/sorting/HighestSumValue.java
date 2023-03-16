@@ -26,6 +26,8 @@ package sorting;
 //    }
 //}
 
+import java.util.Scanner;
+
 public class HighestSumValue {
     public static int highestSumValue(int number) {
         // convert the number to a string to iterate over its digits
@@ -55,6 +57,22 @@ public class HighestSumValue {
         int[] arr = {24, 63, 1, 78, 96, 58, 26, 45, 5};
         HighestSumValue h = new HighestSumValue();
         System.out.println(h.linearSearch(arr, 5));
+//        System.out.println("Enter a word :");
+        Scanner sc = new Scanner(System.in);
+        String word = sc.next();
+        System.out.println(h.reverseString(word));
+    }
+
+    public String reverseString(String word) {
+        String newString = "";
+//        for (int i = 0; i < word.length(); i++) {
+//            char c = word.charAt(i);
+//             newString = c + newString;
+//        }
+        for (int i = word.length() - 1; i >= 0; i--) {
+            newString = newString + word.charAt(i);
+        }
+        return newString;
     }
 
     public int linearSearch(int[] arr, int target) {
