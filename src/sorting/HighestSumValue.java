@@ -65,6 +65,7 @@ public class HighestSumValue {
 
     public String reverseString(String word) {
         String newString = "";
+        // saurabh style
 //        for (int i = 0; i < word.length(); i++) {
 //            char c = word.charAt(i);
 //             newString = c + newString;
