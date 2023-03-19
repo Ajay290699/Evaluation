@@ -14,7 +14,7 @@ public class DecimalToBinary {
             binary[i++] = decimal % 2;
             decimal /= 2;
         }
-        System.out.print("Binary equivalent: ");
+        System.out.print("Binary equivalent : ");
         for (int j = i - 1; j >= 0; j--) {
             System.out.print(binary[j]);
         }
