@@ -26,8 +26,6 @@ package sorting;
 //    }
 //}
 
-import java.util.Scanner;
-
 public class HighestSumValue {
     public static int highestSumValue(int number) {
         // convert the number to a string to iterate over its digits
@@ -58,9 +56,10 @@ public class HighestSumValue {
         HighestSumValue h = new HighestSumValue();
         System.out.println(h.linearSearch(arr, 5));
 //        System.out.println("Enter a word :");
-        Scanner sc = new Scanner(System.in);
-        String word = sc.next();
-        System.out.println(h.reverseString(word));
+//        Scanner sc = new Scanner(System.in);
+//        String word = sc.next();
+//        System.out.println(h.reverseString(word));
+        recursiveMultiplication(5, 1);
     }
 
     public String reverseString(String word) {
@@ -82,6 +81,13 @@ public class HighestSumValue {
             }
         }
         return -1;
+    }
+
+    public static void recursiveMultiplication(int num, int i) {
+        if (i > 10)
+            return;
+        System.out.println(num * i);
+        recursiveMultiplication(num, i + 1);
     }
 
 }
