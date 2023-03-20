@@ -1,4 +1,4 @@
-package sorting;
+package programs;
 //
 //import java.util.Scanner;
 //
